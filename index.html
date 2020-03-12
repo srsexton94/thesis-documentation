@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Dissertation on Grammatical Gender</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-      <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet"> -->
 
-      <nav id="navbar">
-        <header id="nav-title">Manuscript Documentation</header>
-        <ul>
-          <li><a class="nav-link" href="#abstract">Abstract</a></li>
-          <li><a class="nav-link" href="#problem-statement">Problem Statement</a></li>
-          <li><a class="nav-link" href="#conceptual-framework">Conceptual Framework</a>
-            <ul>
-              <li><a class="sub-link" href="#grammatical-gender">Grammatical Gender</a></li>
-              <li><a class="sub-link" href="#sociological-gender">Sociological Gender</a></li>
-              <li><a class="sub-link" href="#gender-distinguished">Gender Distinguished</a></li>
-              <li><a class="sub-link" href="#prevalence_and_varieties">Prevalence and Varieties</a></li>
-              <li><a class="sub-link" href="#descriptivism">Descriptivism</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link" href="#methodology">Methodology</a>
-            <ul>
-              <li><a class="sub-link" href="#statistical_database_selection">Statistical Database Selection</a></li>
-              <li><a class="sub-link" href="#language_selection">Language Selection</a></li>
-              <li><a class="sub-link" href="#literature-selection">Literature Selection</a></li>
-            </ul>
+      <div class="wrapper">
+        <nav id="sidebar" class="sidebar">
+          <div class="sidebar-header">
+            <h3>Manuscript Documentation</h3>
+          </div>
+          <ul class="list-unstyled components">
+            <li><a class="nav-link" href="#abstract">Abstract</a></li>
+            <li><a class="nav-link" href="#problem-statement">Problem Statement</a></li>
+            <li class="active">
+              <a href="#conceptual-framework-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">Conceptual Framework</a>
+              <ul class="collapse list-unstyled" id="conceptual-framework-submenu">
+                <li><a class="sub-link" href="#conceptual-framework">Introduction</a></li>
+                <li><a class="sub-link" href="#grammatical-gender">Grammatical Gender</a></li>
+                <li><a class="sub-link" href="#sociological-gender">Sociological Gender</a></li>
+                <li><a class="sub-link" href="#gender-distinguished">Gender Distinguished</a></li>
+                <li><a class="sub-link" href="#prevalence-and-varieties">Prevalence and Varieties</a></li>
+                <li><a class="sub-link" href="#descriptivism">Descriptivism</a></li>
+              </ul>
             </li>
-          <li><a class="nav-link" href="#findings">Findings</a>
-          <ul>
-            <li><a class="sub-link" href="#linguistic_historical_development">Linguistic Historical Development</a></li>
-            <li><a class="sub-link" href="#grammatical-gender_systems">Grammatical Gender Systems</a></li>
-            <li><a class="sub-link" href="#gender_inclusivity">Gender Inclusivity</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link" href="#discussion">Discussion</a></li>
-          <li><a class="nav-link" href="#summary-conclusion">Summary & Conclusion</a></li>
-          <li><a class="nav-link" href="#appendix">Appendix</a></li>
-          <li><a class="nav-link" href="#works_cited">Works Cited</a></li>
-          <li><a href="#disclaimer">Disclaimer</a></li>
-        </ul>
-     </nav>
+            <li class="active">
+              <a href="#methodology-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">Methodology</a>
+              <ul class="collapse list-unstyled" id="methodology-submenu">
+                <li><a class="sub-link" href="#methodology">Introduction</a></li>
+                <li><a class="sub-link" href="#statistical-database-selection">Statistical Database Selection</a></li>
+                <li><a class="sub-link" href="#language_selection">Language Selection</a></li>
+                <li><a class="sub-link" href="#literature-selection">Literature Selection</a></li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="#findings-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">Findings</a>
+              <ul class="collapse list-unstyled" id="findings-submenu">
+                <li><a class="sub-link" href="#findings">Introduction</a></li>
+                <li><a class="sub-link" href="#linguistic-historical-development">Linguistic Historical Development</a></li>
+                <li><a class="sub-link" href="#grammatical-gender-systems">Grammatical Gender Systems</a></li>
+                <li><a class="sub-link" href="#gender-inclusivity">Gender Inclusivity</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="#discussion">Discussion</a></li>
+            <li><a class="nav-link" href="#summary-conclusion">Summary & Conclusion</a></li>
+            <li><a class="nav-link" href="#appendix">Appendix</a></li>
+            <li><a class="nav-link" href="#works_cited">Works Cited</a></li>
+          </ul>
+        </nav>
+        <div id="content">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i><span>Toggle Sidebar</span>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+
 
       <main id="main-doc">
         <h1>CROSS LINGUISTIC ANALYSIS OF GRAMMATICAL GENDER:<br>IMPLICATIONS FOR CRITICAL LANGUAGE PEDAGOGY</h1>
@@ -100,7 +118,7 @@
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, obvious for those familiar with grammatically gendered languages, semantics is not always entirely determinate in assignment.  For example nouns with inanimate referents, which intuitively lack a sociological gender, still demonstrate grammatical gender in many languages.  Even languages that exhibit use of the neuter gender can delegate inanimate objects - to which the neuter gender is traditionally credited - to any of the language’s possible genders.  For example, this can be seen in the Polish Kawa (f. “coffee”)['kava] and the Gujarati ખુરશી (m. “chair”)[khʊrəshiː]).  Objects are grammatically gendered in this sense despite lacking any sociological gender (intuitively, coffee and chairs are not male or female).  Relatedly there are nouns with animate, naturally gendered referents which nonetheless belong to a contrasting grammatical gender.  An oft cited example is the German Mädchen (n. “girl”)[mɛːtçən].  While a girl is an intuitively female being, the word mädchen is grammatically neuter.  Similarly, the Irish word for ‘girl,’ cailín [kalʲi:nʲ], has masculine grammatical gender. </p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This apparent contradiction leads this inquiry to consider the role of the other forms of grammatical gender assignment: namely the morphological.  A word’s morphological markers often determine its grammatical gender.  For example, the Spanish language has masculine-feminine gender distinctions.  In Spanish nouns that exhibit a word-final -o are typically gendered as masculine, while nouns that have a word-final -a are typically feminine.<sup><a href="#foot3">3</a></sup>  Speakers are therefore able to identify words such as mesa (“table”)[ˈmesa], corbata (“necktie”)[koɾˈβata], and alegría (“joy”)[aleˈɣɾia] as feminine, and words such as ojo (“eye”)[ˈoxo], periódico (“newspaper”)[peˈɾjoðiko], and miedo (“fear”)[ˈmjeðo] as masculine; even though the concepts of tables, neckties, and joy, or eyes, newspapers, and fear do not give the speaker any innate gender information to that effect.  Additionally it is evident that morphology can occasionally even take priority over semantics. The previously mentioned German Mädchen (“girl”) morphologically is a diminutive form of the word Magd (“maid”)[ˈmagd].  Therefore, despite the semantics suggesting feminine, a German speaker would recognize that in their language diminutives are grammatically gendered as neuter. </p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continuing in this trend of exceptions, morphology and semantics together still do not account for all possible variations of grammatical gender assignment.  As with many other aspects of language, various historical or etymological developments have greatly affected linguistic gender assignment.  Developments such as language interactions and borrowings can often result in otherwise unexpected gender assignments.  As etymological contexts are not typically immediately apparent, and are often particularly difficult to decipher, these means for gender assignment may appear thoroughly arbitrary.  They are often decreed as “exceptions” by speakers, teachers, and learners of the languages alike.  However, the history of language is integral to comprehensively understanding grammatical gender, and will thoroughly be explored in this paper.</p>
-          <h3 class="subtitle" id="prevalence_and_varieties">Prevalence and Varieties:</h3>
+          <h3 class="subtitle" id="prevalence-and-varieties">Prevalence and Varieties:</h3>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grammatical Gender can be observed in roughly a quarter of the world’s languages, and can take a multitude of forms (Rudge, 2013).<sup><a href="#foot4">4</a></sup>  The languages considered in this paper however typically differentiate gender in one of three ways.  Possibly the most well known is the binary system of masculine-feminine gender. This can be seen in Afro-Asiatic, Romance, Eastern Baltic, and Insular Celtic languages, as well as Albanian and several Indo-Iranian languages.   Another system is the ternary masculine-feminine-neuter gender system: observed in Slavic, Hellenic, and many North and West Germanic languages, as well as a few Italic and Indo-Iranian languages.  Notably this distinction is commonly considered the ancestor to languages that contemporarily are gendered differently.<sup><a href="#foot5">5</a></sup>  Famously this type of linguistic shift occurred in English; but also in Irish, Persian, Prussian, and Albanian, to name a few.  Finally, there exists another binary system of common and neuter genders; where common is often considered as the merging, or possible original state, of masculine and feminine.  Common-neuter distinctions are comparatively rare, and are well known in Danish, Swedish, and Dutch.  It can also be found in the Bergensk dialect of Norwegian, and in the extinct Anatolian Hittite language.</p>
 
           <h3 class="subtitle" id="descriptivism">Descriptivism:</h3>
@@ -115,7 +133,7 @@
           <h2>METHODOLOGY</h2>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The method outlined below aims to describe the techniques used to identify, select, and analyse the information used in this inquiry; including the languages selected, the resources used to analyse them, and the prior research reviewed in pursuit of addressing the research problem outlined above.  This section can serve as a reference to readers throughout the larger study.</p>
 
-          <h3 class="subtitle" id="statistical_database_selection">Statistical Database Selection:</h3>
+          <h3 class="subtitle" id="statistical-database-selection">Statistical Database Selection:</h3>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To conduct this work <i>the Ethnologue</i>, in its 19th edition, was selected as a linguistic database to provide statistical, historical, geographic and speakers-based information for the languages involved (Lewis et al. 2016).  In selection <i>The Ethnologue</i>, created by SIL International,<sup><a href="#foot1">9</a></sup> was primarily considered against <i>The Linguasphere Register</i>,<sup><a href="#foot10">10</a></sup> founded by David Dalby of the University of London.  Both resources have a long standing and active history that exceeds fifty years, are both still actively updated and improved with new information. They also both feature accessible web-based formats (Paolillo, 2006).  Unfortunately few other active projects aim to be similarly comprehensive.  Other projects are limited to general linguistic references for a select variety of languages,  or are specific to language group and family references, such as those on endangered languages.<sup><a href="#foot11">11</a></sup> </p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ultimately <i>Ethnologue</i> was chosen over <i>Linguasphere Register</i> for this review as the standard source on linguistic statistical information for a few key reasons. Firstly, <i>Ethnologue</i> features a focus and central organization around specific language populations, as well as the relationships between linguistic varieties; as opposed to the <i>Linguasphere Register</i>.  Additionally, starting with its fifteenth edition, <i>Ethnologue</i> features use of the ISO (International Organization for Standardization) 639-3.  Use of the ISO, as an international standard, is ideal as it will make its language references externally verifiable for any continued research (Simons & Gordon, 2006).  Lastly, <i>Ethnologue</i> also utilizes the Extended Graded Intergenerational Disruption Scale (EGIDS), a unique system with a quantitative basis for categorizing languages regarding their relative development or endangerment (Lewis and Simons 2010).  The use of <i>Ethnologue</i> proved pivotal in both the language selection and the findings’ linguistic typological profiles.</p>
 
@@ -149,7 +167,7 @@
           <h2>FINDINGS</h2>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The findings to follow will consider four distinct aspects of each language.  Firstly, there is an explanation of the context of each language, both typologically and historically.  The historical review will take particular note of linguistic influences not directly reflected in the language’s genealogy. Secondly, a brief review of each of the languages’ grammatical gender and agreement systems, as informed by formal grammars, is to follow.  Thirdly, a thorough review and summary of selected literature is presented with regard to the linguistic role of grammatical gender in each language.  Finally, the findings of this inquiry will conclude by reviewing a selection of existing options for gender inclusivity in speech.  This inquiry then proceeds on to a discussion of the implications of these findings in pedagogical efforts for inclusivity.</p>
 
-          <h3 class="subtitle" id="linguistic_historical_development">Linguistic Historical Development:</h3>
+          <h3 class="subtitle" id="linguistic-historical-development">Linguistic Historical Development:</h3>
 
           <h4 class="quote">English</h4>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;English is a West Germanic language of the Indo-European family that is localized geographically to the United Kingdom (Lewis, et al. 2016).  English has a widespread global profile and is lauded by many as one of the most contemporarily prominent international languages (Crystal, 2016).  It has roughly 943 million speakers worldwide; with over 339 million native speakers, and over 603 million speakers of English as a second language.  English is contemporarily written in Latin script,<sup><a href="#foot19">19</a></sup> with brief popularity of alternatives such as the Deseret alphabet<sup><a href="#foot20">20</a></sup> and Shavian script.<sup><a href="#foot21">21</a></sup>  Notably, every language in this review, including English, can additionally be written in the Braille script.<sup><a href="#foot22">22</a></sup>  Typologically English features strict Subject-Verb-Object (SVO) word order, which distinguishes part of speech.  In English noun heads are preceded by articles, adjectives and numerals; and followed by genitives.  English is question-word initial; features active and passive voice as well as phrasal verbs; and is both causative and comparative.  Phonologically the language features twenty-four consonants, thirteen vowels, and eight diphthongs.  English is non-tonal, free stress, and allows both consonant and vowel clusters (Lewis et al. 2016).  However, as with each language examined in this inquiry, English in its contemporary form is the result of many centuries of linguistic development.</p>
@@ -177,7 +195,7 @@
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The final language in consideration is Swedish; also known as Ruotsi or Svenska.  Swedish is a continental, East Scandinavian language, in the North branch of the Indo-European Germanic language family.  Swedish has over 12 million speakers worldwide.  Of those, over 9 million speak Swedish natively, while roughly 3 million speak it as a second language (Lewis et al. 2016).  Notably, however, a vast majority of its speakers are geographically localized to Scandinavia.  This relative isolation is unique comparative to the other languages of this study.  Swedish is also primarily written in the Latin script.  Typologically, the language features Subject-Verb-Object (SVO) word order. In the case of interrogatives, however, if may invert to Verb-Subject-Object.  Swedish is noun head final. It also features prepositions, definite and indefinite articles, passives, and comparatives.  Phonologically the language is tonal, with two distinct tones, and has 19 consonantal and 17 vocalic phonemes (Lewis et al. 2016). </p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Swedish linguistic ancestry is often traced back to the early 2nd century CE; a time at which it’s hypothesized that the Proto-Norse language initially developed.  Proto-Norse continued to evolve non-divergently for several centuries.  However, with the birth of the Viking Era, in the 8th century CE, many linguists mark the beginning of Old Norse.  As previously mentioned in the history of the English language, the interactions of the Nordic vikings influenced the development of many other languages across Europe and the North Atlantic.  Gradually the language separated into three families: Old East Norse, Old West Norse, and Old Gutnish.  By the 14th century CE these developed into their contemporary forms: with the Old East variety diverging into Swedish and Danish; the Old West variety into Norwegian, Icelandic, Faroese, as well as other extinct language; and Old Gutnish developing non-divergently into the Modern Gutnish, a living though sparsely spoken variety.  Notably, despite the genealogical separation between them, the Continental Scandinavian languages (Swedish, Danish, and Norwegian) have grown very close due to their geographic proximity.  The three languages are highly mutually intelligible, forming a dialectal continuum across the peninsula.  This is to such a degree that some linguists regard the three as a unified language; however for the purposes of this paper, Swedish will be considered individually (Bandle et al. 2002).</p>
 
-          <h3 class="subtitle" id="grammatical-gender_systems">Grammatical Gender Systems Structures:</h3>
+          <h3 class="subtitle" id="grammatical-gender-systems">Grammatical Gender Systems Structures:</h3>
 
           <h4 class="quote">English: "Genderless"</h4>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Though contemporarily regarded as “genderless,” English clearly still demonstrates its historical Germanic roots.  Old English indeed distinguished three genders; masculine, feminine, and neuter.  These declensional classes, as well as the related inflectional endings, were distinct and systematic, a true grammatical gender system.  Much of the literature regarding English’s gender therefore concerns itself with the question of its decline and eventual disappearance (Jones, 2015)(Curzan, 2003)(Shinkawa, 2012).  The decline is attributed by some to the decay of inflectional endings; possibly accelerated by contact with Old Norse in the Midlands and North, with the Southern midlands seen as the most linguistically conservative (Curzan, 2003).  This theory is critically examined in the literature.</p>
@@ -200,7 +218,7 @@
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In Swedish, as it is spoken today, features one ending that doubly represents the gender and number. Modern Swedish has two numbers grammatically, the singular and plural (Thompson, 2015). Nouns, adjectives, and articles all inflect in this manner, agreeing in both gender and number.  Definiteness is marked on adjectives and articles, where adjectives additionally hold reference for a measure of strength.  Strong adjectives are gender-distinct; seen in the differentiation of phrases such as en gammal man (c.“an old man”)[en gæmɑl mɑn] and ett gammalt hus (n. “an old house”)[ɛt gæmɑlt hʉs].  Weak adjectives alternatively do not distinguish gender: where the adjective in the above examples would be realized as gamla (“old”)[gæmla], regardless of gender.  The strength paradigm is also realized in verbs: where weak verbs feature additional morphological endings and strong verbs feature vowel change within the root, with several classes.  Regardless of strength, verbs also inflect for person and number and feature three moods and three voices,<sup><a href="#foot42">42</a></sup> but they notably do not distinguish for gender (Thompson, 2015).</p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Swedish personal pronouns function in a remarkably similar manner to the authorial language of this paper, English.  In their Nominative/Genitive pairs, Swedish Personal Pronouns are as follows.  The first person is jag/min [jɑːj]/[miːn] in the singular, and vi/vår [viː]/[voːr] in the plural.  The second person is du/din [du]/[din] in the singular; and while the plural ni/er [niː]/[eːr] does exist, it is in severe decline and used only in the specific case of addressing royalty.  The third person plural is realized as de/deras [dɔm]/[deːras].  As is likely noticeable, none those described above create any distinction for gender.  Instead gender is only realized in the third person singular, where the masculine pronouns are han/hans [han]/[hans], the feminine are hon/hennes [hoːn]/[hɛnˈes], the common are den/dess [dɛn]/[deːs], and the neuter are det/dess [dɛ]/[deːs]<sup><a href="#foot43">43</a></sup> (Ölander et al. 2015).</p>
 
-          <h3 class="subtitle" id="gender_inclusivity">Gender Inclusivity:</h3>
+          <h3 class="subtitle" id="gender-inclusivity">Gender Inclusivity:</h3>
 
           <h4 class="quote">Review of Prior Research:</h4>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most of the research acquired within this literature review does not actually address gender inclusivity directly, but instead takes a descriptive approach to grammatical gender as a whole.  Considering the research on Grammatical Gender in this way, a number of related topics are examined throughout the literature. </p>
@@ -506,5 +524,15 @@
           <p id="disclaimer">The writing above is property of the author and any use or reproduction of it requires their written permission; you may contact them at srsexton94@gmail.com. <br> It may be quoted or summarized in research projects if cited properly in MLA, APA, or Chicago format.</p>
         </footer>
       </main>
+
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
     </body>
 </html>

@@ -7,5 +7,10 @@
 // require('./example')
 
 $(() => {
-  // your JS code goes here
+  $('#sidebar').mCustomScrollbar({ theme: 'minimal' })
+  $('#sidebarCollapse').on('click', () => {
+    $('#sidebar').toggleClass('active') // open or close navbar
+    $('.collapse.in').toggleClass('in') // close dropdowns
+    $('a[aria-expanded=true]').attr('aria-expanded', 'false') // adjust aria-expanded attributes
+  })
 })
