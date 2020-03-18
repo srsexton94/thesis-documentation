@@ -1,102 +1,73 @@
 @import '~bootstrap/scss/bootstrap';
 
-$highlight: #3F0D12;
-$base-color: #F7F4F3;
-$menu: #7C7C7C;
+$highlight: #3f0d12;
+$base-color: #f7f4f3;
+$menu: #7c7c7c;
+$text: #000;
 
 body {
   background-color: $base-color;
+  color: $text;
   font-family: serif;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+a {
+  color: $text;
+  text-decoration: none;
 }
 
 main {
-  left: 25vw;
+  left: 15em;
+  margin: 2vh 0;
+  padding-left: 10%;
   position: absolute;
-  margin: 1vh 2vw;
-}
-
-.wrapper {
-  display: flex;
   width: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
+.figures {
+  max-height: 85vh;
+  width: 85%;
+}
+
 .sidebar {
-  background: $menu;
-  border-color: $highlight;
-  border-right: solid;
-  border-width: .5vw;
+  background-color: $menu;
+  border-right: 2em solid $highlight;
   color: $highlight;
-  height: 100vh;
-  left: 0;
+  height: 100%;
+  padding-top: 35vh;
   position: fixed;
-  top: 0;
-  transition: all .3s;
-  width: 25vw;
-  z-index: 999;
+  text-align: center;
+  width: 26%;
 
   a {
     color: $highlight;
+    font-weight: 600;
+  }
+
+  li {
+    padding: 1em;
+    text-decoration: none;
   }
 }
 
-//
-// #navbar {
-//   float: left;
-//   width: 28vw;
-//   background-color: #7C7C7C;
-//   position: fixed;
-//   top: var(--navbar-pos, 0px);
-//   left: var(--navbar-pos, 0px);
-//   bottom: var(--navbar-pos, 0px);
-//   height: 100vh;
-//   border-right: solid;
-//   border-color: #3F0D12;
-//   border-width: var(--navbar-border, 5px);
-// }
-// #nav-title {
-//   font-size: var(--navtitle-size, 32px);
-//   font-weight: 800;
-//   color: #3F0D12;
-//   margin: 1vw;
-//   text-align: left;
-// }
-// #navbar a {
-//   text-decoration: none;
-//   color: #3F0D12;
-//   font-size: var(--link-size, 16px);
-// }
-//
-// #main-doc {
-//   position: absolute;
-//   left: 32vw;
-//   top: var(--doc-top, 50px);
-//   width: 65vw;
-// }
-// .main-section {
-//   margin-top: var(--doc-margin, 30px);
-// }
-// .quote {
-//   text-align: center;
-//   font-style: italic;
-// }
-// .subtitle {
-//   text-decoration: underline;
-//   }
-// .figures {
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
-//   max-width: 60vw;
-// }
-// #works_cited li {
-//   list-style: none;
-//   padding-left: var(--cite-pad, 22px);
-//   text-indent: var(--cite-indent, -44px);
-// }
-// footer {
-//   color: #2B303A;
-//   text-align: center;
-//   font-size: var(--foot-size, 12px);
-//   font-style: italic;
-//   margin: 2vh 4vw 15vh 4vw;
-// }
+@media only screen and (min-width: 600px) {
+  .sidebar {
+    padding-top: 5vh;
+  }
+
+  main {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+}
